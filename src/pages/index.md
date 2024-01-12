@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Kelowna Rock Climbing
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: British Columbia, Canada
+title: Kelowna Climbing
+image: /img/44d6e65f-e690-4bd9-b75a-0106fcf58613.jpeg
+heading: Kelowna Rock Climbing
+subheading: The Best Rocks R'ound
 mainpitch:
   title: Why Kaldi
   description: >
