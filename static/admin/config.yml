@@ -244,3 +244,21 @@ collections:
                   },
                 ],
             }
+
+  - name: "crags"
+    label: "Crags"
+    folder: "src/pages/crags"
+    create: true
+    slug: "{{cragName}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "blog-post",
+        }
+      - { label: "Crag Name", name: "cragName", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list" }
