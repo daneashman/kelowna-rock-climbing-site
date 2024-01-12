@@ -245,20 +245,12 @@ collections:
                 ],
             }
 
-  - name: "crags"
-    label: "Crags"
-    folder: "src/pages/crags"
+  - name: "climbs"
+    label: "Climbs"
+    folder: "src/pages/climbs"
     create: true
-    slug: "{{cragName}}"
+    slug: "{{slug}}"
     fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "blog-post",
-        }
-      - { label: "Crag Name", name: "cragName", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "markdown" }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Crag", name: "crag", widget: "list" }

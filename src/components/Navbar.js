@@ -14,8 +14,11 @@ const Navbar = () => {
     >
       <div className="container">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item" title="Logo">
+          {/* <Link to="/" className="navbar-item" title="Logo">
             <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
+          </Link> */}
+          <Link to="/" className="navbar-item">
+            Kelowna Rock Climbing
           </Link>
           {/* Hamburger menu */}
           <button
@@ -44,8 +47,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/products">
-              Products
+            <Link className="navbar-item" to="/crags">
+              Crags
+            </Link>
+          </li>
+          <li className="navbar-item" style={{ padding: "0px" }}>
+            <Link className="navbar-item" to="/gyms">
+              Gyms
             </Link>
           </li>
           <li className="navbar-item" style={{ padding: "0px" }}>
