@@ -263,7 +263,14 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "climb",
+        }
       - { label: "Name", name: "name", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "text" }
       - { label: "Crag", name: "crag", widget: "list" }
       - { label: "Wall", name: "wall", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }
