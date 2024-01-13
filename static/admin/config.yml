@@ -319,6 +319,5 @@ collections:
             [
               { label: Name, name: name, widget: string },
               { label: Grade, name: grade, widget: string },
-              { label: Image, name: image, widget: image },
             ],
         }
