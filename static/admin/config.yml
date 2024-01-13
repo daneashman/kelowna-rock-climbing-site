@@ -262,6 +262,8 @@ collections:
     folder: "src/pages/klo-creek"
     create: true
     slug: "{{slug}}"
+    nested:
+      depth: 100
     fields:
       - {
           label: "Template Key",

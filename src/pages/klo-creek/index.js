@@ -11,7 +11,7 @@ function KloCreek({ data }) {
       <h2>Climbs</h2>
       {data.allMarkdownRemark.group.map((i) => (
         <li key={i.group[0].nodes[0].fields.slug}>
-          {i.group[0].nodes[0].frontmatter.name}
+          {i.group[0].nodes[0].frontmatter.title}
         </li>
       ))}
     </Layout>
@@ -28,7 +28,7 @@ export const kloCreekQuery = graphql`
               slug
             }
             frontmatter {
-              name
+              title
               wall
             }
           }
