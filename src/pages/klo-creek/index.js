@@ -20,7 +20,7 @@ function KloCreek({ data }) {
 
 export const kloCreekQuery = graphql`
   query MyQuery {
-    allMarkdownRemark(filter: { frontmatter: { crag: { eq: "tavern" } } }) {
+    allMarkdownRemark {
       group(field: frontmatter___wall) {
         group(field: id) {
           nodes {

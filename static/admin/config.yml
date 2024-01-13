@@ -257,24 +257,6 @@ collections:
                 ],
             }
 
-  - name: "climbs"
-    label: "Climbs"
-    folder: "src/pages/climbs"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "climb",
-        }
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Crag", name: "crag", widget: "list" }
-      - { label: "Wall", name: "wall", widget: "list" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
   - name: "klo-creek"
     label: "KLO Creek"
     folder: "src/pages/klo-creek"
@@ -287,7 +269,7 @@ collections:
           widget: "hidden",
           default: "climb",
         }
-      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Grade", name: "grade", widget: "string" }
       - { label: "Height", name: "height", widget: "string" }
       - { label: "Bolts", name: "bolts", widget: "string" }
