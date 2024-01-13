@@ -4,6 +4,8 @@ name: "[8] Half Pint (5.10d)"
 description: " "
 wall:
   - tavern
-crag: klo-creek
+crag:
+  - klo-creek
 ---
+
 Set: ?

@@ -288,7 +288,9 @@ collections:
           default: "climb",
         }
       - { label: "Name", name: "name", widget: "string" }
+      - { label: "Grade", name: "grade", widget: "string" }
+      - { label: "Height", name: "height", widget: "string" }
+      - { label: "Bolts", name: "bolts", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Wall", name: "wall", widget: "list" }
-      - { label: "Crag", name: "crag", widget: "list", default: "klo-creek" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Crag", name: "crag", widget: "list", default: " - klo-creek" }

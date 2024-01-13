@@ -7,6 +7,8 @@ function KloCreek({ data }) {
   return (
     <Layout>
       <h1>Welcome to KLO Creek!</h1>
+      <h2>Areas</h2>
+      <h2>Climbs</h2>
       {data.allMarkdownRemark.group.map((i) => (
         <li key={i.group[0].nodes[0].fields.slug}>
           {i.group[0].nodes[0].frontmatter.name}
@@ -18,7 +20,7 @@ function KloCreek({ data }) {
 
 export const kloCreekQuery = graphql`
   query MyQuery {
-    allMarkdownRemark(filter: { frontmatter: { crag: { eq: "klo-creek" } } }) {
+    allMarkdownRemark(filter: { frontmatter: { crag: { eq: "tavern" } } }) {
       group(field: frontmatter___wall) {
         group(field: id) {
           nodes {
