@@ -133,6 +133,18 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+      - file: "src/pages/areas/index.md"
+        label: "Areas"
+        name: "areas"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/gyms/index.md"
         label: "Gyms"
         name: "gyms"
@@ -257,8 +269,35 @@ collections:
                 ],
             }
 
-  - name: "klo-creek"
-    label: "KLO Creek"
+  - name: "area-pages"
+    label: "Area Pages"
+    files:
+      - file: "src/pages/areas/klo-creek/index.md"
+        label: "KLO Creek"
+        name: "klo-creek"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Walls",
+              name: "walls",
+              widget: "list",
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+
+  - name: "klo-creek-walls"
+    label: "KLO Creek Walls"
+    label_singular: "KLO Creek Wall"
     folder: "src/pages/klo-creek"
     create: true
     slug: "{{slug}}"
@@ -267,12 +306,19 @@ collections:
           label: "Template Key",
           name: "templateKey",
           widget: "hidden",
-          default: "climb",
+          default: "wall",
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Grade", name: "grade", widget: "string" }
-      - { label: "Height", name: "height", widget: "string" }
-      - { label: "Bolts", name: "bolts", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Wall", name: "wall", widget: "list" }
-      - { label: "Crag", name: "crag", widget: "list", default: " - klo-creek" }
+      - { label: "Area", name: "area", widget: "string", default: " klo-creek" }
+      - {
+          label: "Climbs",
+          name: "climbs",
+          widget: "list",
+          fields:
+            [
+              { label: Name, name: name, widget: string },
+              { label: Grade, name: grade, widget: string },
+              { label: Image, name: image, widget: image },
+            ],
+        }
