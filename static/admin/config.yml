@@ -288,7 +288,12 @@ collections:
               label: "Walls",
               name: "walls",
               widget: "list",
-              fields: [{ label: Text, name: text, widget: text }],
+              fields:
+                [
+                  { label: "Name", name: "name", widget: "string" },
+                  { label: "Description", name: "description", widget: "text" },
+                  { label: "Slug", name: "slug", widget: "hidden" },
+                ],
             }
 
   - name: "klo-creek-walls"
