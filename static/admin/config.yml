@@ -272,6 +272,18 @@ collections:
   - name: "area-pages"
     label: "Area Pages"
     files:
+      - file: "src/pages/areas/index.md"
+        label: "Areas"
+        name: "areas"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/areas/klo-creek/index.md"
         label: "KLO Creek"
         name: "klo-creek"
@@ -288,11 +300,7 @@ collections:
               label: "Walls",
               name: "walls",
               widget: "list",
-              fields:
-                [
-                  { label: Image, name: image, widget: image },
-                  { label: Text, name: text, widget: text },
-                ],
+              fields: [{ label: Text, name: text, widget: text }],
             }
 
   - name: "klo-creek-walls"

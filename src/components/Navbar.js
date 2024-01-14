@@ -47,7 +47,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/klo-creek">
+            <Link className="navbar-item" to="/areas">
+              Areas
+            </Link>
+          </li>
+          <li className="navbar-item" style={{ padding: "0px" }}>
+            <Link className="navbar-item" to="/areas/klo-creek">
               KLO Creek
             </Link>
           </li>
