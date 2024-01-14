@@ -306,7 +306,7 @@ collections:
   - name: "klo-creek-walls"
     label: "KLO Creek Walls"
     label_singular: "KLO Creek Wall"
-    folder: "src/pages/klo-creek"
+    folder: "src/pages/areas/klo-creek"
     create: true
     slug: "{{slug}}"
     fields:
