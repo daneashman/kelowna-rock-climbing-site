@@ -1,6 +1,5 @@
 ---
 templateKey: klo-creek
-title: asdf
+title: KLO Creek
 ---
-
-asdf
+Welcome to KLO Creek!
