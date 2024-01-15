@@ -1,63 +1,43 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
 
-// eslint-disable-next-line
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
-
-  return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-};
-
-const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data;
-
+export default function kloCreekArea({ data }) {
+  const walls = data.allMarkdownRemark.group[0].nodes[0].frontmatter.walls;
+  console.log(walls);
   return (
     <Layout>
-      <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
+      <h1>Welcome to KLO Creek</h1>
+      <ul>
+        {walls.map((wall) => (
+          <li key={wall.name}>
+            <Link to={"." + wall.slug}>{wall.name}</Link>
+          </li>
+        ))}
+      </ul>
     </Layout>
   );
-};
+}
 
-AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
-};
-
-export default AboutPage;
-
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
+export const wallsQuery = graphql`
+  query {
+    allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "klo-creek" } } }
+    ) {
+      group(field: frontmatter___title) {
+        fieldValue
+        nodes {
+          frontmatter {
+            area
+            description
+            walls {
+              name
+              description
+              slug
+            }
+            templateKey
+          }
+        }
       }
     }
   }

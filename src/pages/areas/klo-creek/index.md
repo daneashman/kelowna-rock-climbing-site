@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: klo-creek
 title: KLO Creek
 walls:
   - name: Bear Cave
