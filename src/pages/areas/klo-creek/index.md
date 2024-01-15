@@ -5,9 +5,9 @@ walls:
   - name: Bear Cave
     description: bear-ly a cave
     slug: /bear-cave
-  - name: Pipeline
+  - name: Pipeline Left
     description: the is in fact a pipe
-    slug: /pipeline
+    slug: /pipeline-left
 ---
 
 KLO Creek is a great area!
