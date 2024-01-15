@@ -1,9 +1,9 @@
 ---
 templateKey: wall
 title: Bear Cave
-description: asdf
+description: where the gnarly stuff is
 area: " klo-creek"
 climbs:
   - name: Polar Bear
-    grade: asdf
+    grade: 5.14a
 ---
