@@ -8,6 +8,9 @@ walls:
   - name: Pipeline Left
     description: the is in fact a pipe
     slug: /pipeline-left
+  - name: Pipeline Right
+    description: pipeline, but to the right
+    slug: /pipeline-right
 ---
 
 KLO Creek is a great area!
