@@ -11,12 +11,12 @@ export default function Wall({ data }) {
   return (
     <>
       <h1>{wallName}</h1>
-      {wallImages.map((image) => (
+      {/* {wallImages.map((image) => (
         <>
           {/* <img src={"../../../static/img/" + image.wallImage.base}></img> */}
           <p>{image.wallImagedescription}</p>
         </>
-      ))}
+      ))} */}
 
       {climbs.map((climb) => (
         <>
