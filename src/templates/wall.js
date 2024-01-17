@@ -2,7 +2,7 @@ import * as React from "react";
 // import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 
-export default function climb({ data }) {
+export default function Wall({ data }) {
   const wallName = data.markdownRemark.frontmatter.wallName;
   const climbs = data.markdownRemark.frontmatter.climbs;
   console.log(climbs);
@@ -12,7 +12,7 @@ export default function climb({ data }) {
       {climbs.map((climb) => (
         <>
           <h3>
-            [{climb.grade}] {climb.name}
+            {climb.name} {climb.grade}
           </h3>
 
           {/* <p>{climb.description}</p> */}
@@ -22,9 +22,26 @@ export default function climb({ data }) {
   );
 }
 
+// export const query = graphql`
+//   {
+//     markdownRemark(frontmatter: { wallSlug: { eq: "pipeline-left" } }) {
+//       frontmatter {
+//         area
+//         wallName
+//         climbs {
+//           name
+//           grade
+//           description
+//         }
+//         description
+//       }
+//     }
+//   }
+// `;
+
 export const query = graphql`
-  {
-    markdownRemark(frontmatter: { wallSlug: { eq: "pipeline-left" } }) {
+  query Wall($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
         area
         wallName
