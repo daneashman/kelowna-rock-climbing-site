@@ -11,7 +11,7 @@ export default function kloCreekArea({ data }) {
       <ul>
         {walls.map((wall) => (
           <li key={wall.name}>
-            <Link to={"./walls" + wall.slug}>{wall.name}</Link>
+            <Link to={"./walls/" + wall.slug}>{wall.name}</Link>
           </li>
         ))}
       </ul>

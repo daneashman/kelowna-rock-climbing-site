@@ -199,6 +199,7 @@ collections:
           default: "wall",
         }
       - { label: "Wall Name", name: "wallName", widget: "string" }
+      - { label: "Wall Slug", name: "wallSlug", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Area", name: "area", widget: "string", default: "klo-creek" }
       - {
