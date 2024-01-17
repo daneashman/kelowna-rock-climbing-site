@@ -42,5 +42,7 @@ climbs:
       B(7) 18m
 
       The long chain at the start is the belay clip.
-wallImages: []
+wallImages:
+  - wallImagedescription: test image
+    wallImage: /img/chemex.jpg
 ---
