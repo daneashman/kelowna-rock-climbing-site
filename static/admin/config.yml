@@ -213,3 +213,17 @@ collections:
               { label: Description, name: description, widget: text },
             ],
         }
+      - {
+          label: "Wall Images",
+          name: "wallImages",
+          widget: "list",
+          fields:
+            [
+              { label: Wall Image, name: wallImage, widget: image },
+              {
+                label: Wall Image Description,
+                name: wallImagedescription,
+                widget: text,
+              },
+            ],
+        }

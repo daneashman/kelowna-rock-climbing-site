@@ -52,6 +52,10 @@ export const query = graphql`
           description
         }
         description
+        wallImages {
+          wallImage
+          wallImageDescription
+        }
       }
     }
   }
