@@ -1,6 +1,7 @@
 ---
 templateKey: wall
 wallName: Pipeline Left
+wallSlug: pipeline-left
 description: adsf
 area: "klo-creek"
 climbs:
