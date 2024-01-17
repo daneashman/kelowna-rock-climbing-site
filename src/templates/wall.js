@@ -8,7 +8,6 @@ export default function Wall({ data }) {
   // const area = data.markdownRemark.frontmatter.area;
   const climbs = data.markdownRemark.frontmatter.climbs;
   const wallImages = data.markdownRemark.frontmatter.wallImages;
-  console.log(getImage(wallImages[0].wallImage.childImageSharp));
   return (
     <>
       <h1>{wallName}</h1>
