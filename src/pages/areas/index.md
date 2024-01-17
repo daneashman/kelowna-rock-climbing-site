@@ -1,5 +1,5 @@
 ---
-templateKey: about-page
+templateKey: areas-page
 title: Kelowna Areas
 ---
 
