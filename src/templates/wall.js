@@ -13,7 +13,7 @@ export default function Wall({ data }) {
       <h1>{wallName}</h1>
       {/* {wallImages.map((image) => (
         <>
-          {/* <img src={"../../../static/img/" + image.wallImage.base}></img> */}
+          <img src={"../../../static/img/" + image.wallImage.base}></img>
           <p>{image.wallImagedescription}</p>
         </>
       ))} */}
