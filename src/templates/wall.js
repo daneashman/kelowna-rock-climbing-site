@@ -11,15 +11,19 @@ export default function Wall({ data }) {
   return (
     <>
       <h1>{wallName}</h1>
-      {wallImages.map((image) => (
-        <>
-          <GatsbyImage
-            image={getImage(image.wallImage.childImageSharp)}
-            alt={image.wallImagedescription}
-          />
-          <p>{image.wallImagedescription}</p>
-        </>
-      ))}
+      {!wallImages ? (
+        <></>
+      ) : (
+        wallImages.map((image) => (
+          <>
+            <GatsbyImage
+              image={getImage(image.wallImage.childImageSharp)}
+              alt={image.wallImagedescription}
+            />
+            <p>{image.wallImagedescription}</p>
+          </>
+        ))
+      )}
 
       {climbs.map((climb) => (
         <>
