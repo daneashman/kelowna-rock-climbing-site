@@ -1,6 +1,6 @@
 import * as React from "react";
 // import Layout from "../components/Layout";
-// import { graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 export default function climb({ data }) {
   console.log(data);
@@ -9,7 +9,7 @@ export default function climb({ data }) {
 
 // export const query = graphql`
 //   {
-//     allMarkdownRemark(filter: { frontmatter: { title: $title } }) {
+//     allMarkdownRemark(filter: { frontmatter: { title: "Bear Cave" } }) {
 //       group(field: frontmatter___title) {
 //         fieldValue
 //         nodes {
