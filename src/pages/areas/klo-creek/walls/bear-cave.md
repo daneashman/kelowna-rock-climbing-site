@@ -1,6 +1,6 @@
 ---
 templateKey: wall
-title: Bear Cave
+wallName: Bear Cave
 description: this is the bear cave. home of Po.
 area: klo-creek
 climbs:
