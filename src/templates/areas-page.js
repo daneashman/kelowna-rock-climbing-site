@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 // import PropTypes from "prop-types";
 // import { graphql } from "gatsby";
-// import Layout from "../components/Layout";
+import Layout from "../components/Layout";
 // import Content, { HTMLContent } from "../components/Content";
 
 // eslint-disable-next-line
@@ -56,12 +56,14 @@ import { Link } from "gatsby";
 export default function AboutPage() {
   return (
     <>
-      <h1>Areas Page</h1>
-      <ul>
-        <li>
-          <Link to="./klo-creek">KLO Creek</Link>
-        </li>
-      </ul>
+      <Layout>
+        <h1>Areas Page</h1>
+        <ul>
+          <li>
+            <Link to="./klo-creek">KLO Creek</Link>
+          </li>
+        </ul>
+      </Layout>
     </>
   );
 }

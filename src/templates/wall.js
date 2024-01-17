@@ -1,5 +1,5 @@
 import * as React from "react";
-// import Layout from "../components/Layout";
+import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
 
@@ -10,30 +10,32 @@ export default function Wall({ data }) {
   const wallImages = data.markdownRemark.frontmatter.wallImages;
   return (
     <>
-      <h1>{wallName}</h1>
-      {!wallImages ? (
-        <></>
-      ) : (
-        wallImages.map((image) => (
-          <>
-            <GatsbyImage
-              image={getImage(image.wallImage.childImageSharp)}
-              alt={image.wallImagedescription}
-            />
-            <p>{image.wallImagedescription}</p>
-          </>
-        ))
-      )}
+      <Layout>
+        <h1>{wallName}</h1>
+        {!wallImages ? (
+          <></>
+        ) : (
+          wallImages.map((image) => (
+            <>
+              <GatsbyImage
+                image={getImage(image.wallImage.childImageSharp)}
+                alt={image.wallImagedescription}
+              />
+              <p>{image.wallImagedescription}</p>
+            </>
+          ))
+        )}
 
-      {climbs.map((climb) => (
-        <>
-          <h3>
-            {climb.name} {climb.grade}
-          </h3>
-          <p>{climb.description}</p>
-          <p>{}</p>
-        </>
-      ))}
+        {climbs.map((climb) => (
+          <>
+            <h3>
+              {climb.name} {climb.grade}
+            </h3>
+            <p>{climb.description}</p>
+            <p>{}</p>
+          </>
+        ))}
+      </Layout>
     </>
   );
 }

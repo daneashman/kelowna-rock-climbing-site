@@ -3,8 +3,9 @@ import React from "react";
 // import { Link, graphql } from "gatsby";
 import { Link } from "gatsby";
 // import { getImage } from "gatsby-plugin-image";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-// import Layout from "../components/Layout";
+import Layout from "../components/Layout";
 // import BlogRoll from "../components/BlogRoll";
 // import FullWidthImage from "../components/FullWidthImage";
 
@@ -142,15 +143,9 @@ import { Link } from "gatsby";
 export default function IndexPage() {
   return (
     <>
-      <h1>Welcome to Kelowna Rock Climbing</h1>
-      <ul>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/areas">Areas</Link>
-        </li>
-      </ul>
+      <Layout>
+        <h1>Welcome to Kelowna Rock Climbing</h1>
+      </Layout>
     </>
   );
 }

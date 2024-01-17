@@ -1,97 +1,29 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
+import Nav from "react-bootstrap/Nav";
+// import github from "../img/github-icon.svg";
 // import logo from "../img/logo.svg";
 
-const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
-
+export default function Navbar() {
   return (
-    <nav
-      className="navbar is-transparent"
-      role="navigation"
-      aria-label="main-navigation"
-    >
-      <div className="container">
-        <div className="navbar-brand">
-          {/* <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
-          </Link> */}
-          <Link to="/" className="navbar-item">
-            Kelowna Rock Climbing
+    <>
+      <Nav activeKey="/home">
+        <Nav.Item>
+          <Link to="/" className="nav-link">
+            Home
           </Link>
-          {/* Hamburger menu */}
-          <button
-            className={`navbar-burger burger ${isActive && "is-active"}`}
-            aria-expanded={isActive}
-            onClick={() => setIsActive(!isActive)}
-          >
-            <span />
-            <span />
-            <span />
-          </button>
-        </div>
-        <ul
-          id="navMenu"
-          className={` navbar-start has-text-centered navbar-menu ${
-            isActive && "is-active"
-          }`}
-        >
-          {/* TODO: inline override of padding is a result of refactoring
-                to a ul for accessibilty purposes, would like to see a css
-                re-write that makes this unneccesary.
-             */}
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/about">
-              About
-            </Link>
-          </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/areas">
-              Areas
-            </Link>
-          </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/areas/klo-creek">
-              KLO Creek
-            </Link>
-          </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/gyms">
-              Gyms
-            </Link>
-          </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/blog">
-              Blog
-            </Link>
-          </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/contact">
-              Contact
-            </Link>
-          </li>
-          <li className="navbar-item" style={{ padding: "0px" }}>
-            <Link className="navbar-item" to="/contact/examples">
-              Form Examples
-            </Link>
-          </li>
-          <li className="navbar-end has-text-centered">
-            <a
-              className="navbar-item"
-              href="https://github.com/decaporg/gatsby-plugin-decap-cms"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="icon">
-                <img src={github} alt="Github" />
-              </span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        </Nav.Item>
+        <Nav.Item>
+          <Link to="/about" className="nav-link">
+            About
+          </Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Link to="/areas" className="nav-link">
+            Areas
+          </Link>
+        </Nav.Item>
+      </Nav>
+    </>
   );
-};
-
-export default Navbar;
+}
