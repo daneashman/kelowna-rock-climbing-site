@@ -16,7 +16,7 @@ export default function Wall({ data }) {
             {climb.name} {climb.grade}
           </h3>
 
-          {/* <p>{climb.description}</p> */}
+          <p>{climb.description}</p>
         </>
       ))}
     </>
