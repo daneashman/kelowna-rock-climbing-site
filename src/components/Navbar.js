@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 // import github from "../img/github-icon.svg";
 // import logo from "../img/logo.svg";
 
@@ -18,11 +19,17 @@ export default function Navbar() {
             About
           </Link>
         </Nav.Item>
-        <Nav.Item>
-          <Link to="/areas" className="nav-link">
-            Areas
+        <NavDropdown title="Areas" id="basic-nav-dropdown">
+          <Link to="/areas/klo-creek" className="dropdown-item">
+            KLO Creek
           </Link>
-        </Nav.Item>
+          {/* <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item> */}
+          <NavDropdown.Divider />
+          <Link to="/areas" className="dropdown-item">
+            All Areas
+          </Link>
+        </NavDropdown>
       </Nav>
     </>
   );
