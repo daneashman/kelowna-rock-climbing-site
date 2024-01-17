@@ -1,22 +1,30 @@
 import * as React from "react";
 // import Layout from "../components/Layout";
 import { graphql } from "gatsby";
+// import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function Wall({ data }) {
   const wallName = data.markdownRemark.frontmatter.wallName;
-  const area = data.markdownRemark.frontmatter.area;
+  // const area = data.markdownRemark.frontmatter.area;
   const climbs = data.markdownRemark.frontmatter.climbs;
-  console.log(climbs);
+  const wallImages = data.markdownRemark.frontmatter.wallImages;
   return (
     <>
       <h1>{wallName}</h1>
+      {wallImages.map((image) => (
+        <>
+          <img src={"../../../static/img/" + image.wallImage.base}></img>
+          <p>{image.wallImagedescription}</p>
+        </>
+      ))}
+
       {climbs.map((climb) => (
         <>
           <h3>
             {climb.name} {climb.grade}
           </h3>
-
           <p>{climb.description}</p>
+          <p>{}</p>
         </>
       ))}
     </>
@@ -53,8 +61,11 @@ export const query = graphql`
         }
         description
         wallImages {
-          wallImage
-          wallImageDescription
+          wallImagedescription
+          wallImage {
+            base
+            absolutePath
+          }
         }
       }
     }
