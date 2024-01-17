@@ -4,11 +4,12 @@ import { graphql } from "gatsby";
 
 export default function Wall({ data }) {
   const wallName = data.markdownRemark.frontmatter.wallName;
+  const area = data.markdownRemark.frontmatter.area;
   const climbs = data.markdownRemark.frontmatter.climbs;
   console.log(climbs);
   return (
     <>
-      <h1>Welcome to {wallName}</h1>
+      <h1>{wallName}</h1>
       {climbs.map((climb) => (
         <>
           <h3>
