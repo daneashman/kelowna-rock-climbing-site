@@ -11,6 +11,12 @@ walls:
   - name: Pipeline Right
     description: pipeline, but to the right
     slug: pipeline-right
+  - name: Tavern
+    description: Hard short climbs. Bouldery.
+    slug: Tavern
+  - name: Training Camp
+    description: Great for beginners and chill days.
+    slug: training-camp
 ---
 
 KLO Creek is a great area!
