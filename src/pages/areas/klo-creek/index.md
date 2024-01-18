@@ -14,6 +14,9 @@ walls:
   - name: Tavern
     description: Hard short climbs. Bouldery.
     slug: Tavern
+  - name: Training Camp
+    description: Great for beginners and chill days.
+    slug: training-camp
 ---
 
 KLO Creek is a great area!
