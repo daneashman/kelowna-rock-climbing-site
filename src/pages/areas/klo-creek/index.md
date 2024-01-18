@@ -13,10 +13,9 @@ walls:
     slug: pipeline-right
   - name: Tavern
     description: Hard short climbs. Bouldery.
-    slug: tavern
+    slug: Tavern
   - name: Training Camp
     description: Great for beginners and chill days.
     slug: training-camp
 ---
-
-KLO Creek is a great area!
+KLO Creek offers glacier cut gneiss with wicked crimped, hidden jugs, and often dirty sloppers. It is the most actively developed area in kelowna at the moment and is home to some very hard and highly rated climbs. Id recommend a helmet here as rocks tend do fall on the newer stuff.
