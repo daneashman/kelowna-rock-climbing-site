@@ -3,7 +3,7 @@ import React from "react";
 // import { Link, graphql } from "gatsby";
 import { Link } from "gatsby";
 // import { getImage } from "gatsby-plugin-image";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 import Layout from "../components/Layout";
 // import BlogRoll from "../components/BlogRoll";
