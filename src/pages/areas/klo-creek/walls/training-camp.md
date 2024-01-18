@@ -1,6 +1,6 @@
 ---
 templateKey: wall
-wallName: Training Camp
+title: Training Camp
 description: Great area for beginner to intermediate climbers. Fun routes with
   very little approach
 area: klo-creek

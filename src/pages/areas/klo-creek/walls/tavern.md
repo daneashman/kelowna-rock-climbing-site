@@ -1,6 +1,6 @@
 ---
 templateKey: wall
-wallName: Tavern
+title: Tavern
 description: Sweet overhang
 area: klo-creek
 climbs:
@@ -28,4 +28,7 @@ climbs:
   - name: 8. Half Pint
     grade: 5.10d
     description: " "
+wallImages:
+  - wallImage: /img/tavern.webp
+    wallImagedescription: climbs listed from left to right
 ---

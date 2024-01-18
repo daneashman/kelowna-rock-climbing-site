@@ -1,6 +1,6 @@
 ---
 templateKey: wall
-wallName: Pipeline Left
+title: Pipeline Left
 description: Climbs start on the most left section of the wall. Most of these
   routes are still quite new so wear a helmet in case of loose rock.
 area: klo-creek

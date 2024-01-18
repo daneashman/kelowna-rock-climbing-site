@@ -1,6 +1,6 @@
 ---
 templateKey: wall
-wallName: Bear Cave
+title: Bear Cave
 description: Some of the hardest, most bouldery routes of K.L.O./Kelowna. Home
   of the infamous "Kung Fu Panda".
 area: klo-creek

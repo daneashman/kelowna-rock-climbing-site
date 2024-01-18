@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
 
 export default function Wall({ data }) {
-  const wallName = data.markdownRemark.frontmatter.wallName;
+  const wallName = data.markdownRemark.frontmatter.title;
   // const area = data.markdownRemark.frontmatter.area;
   const climbs = data.markdownRemark.frontmatter.climbs;
   const wallImages = data.markdownRemark.frontmatter.wallImages;
@@ -62,7 +62,7 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         area
-        wallName
+        title
         climbs {
           name
           grade
