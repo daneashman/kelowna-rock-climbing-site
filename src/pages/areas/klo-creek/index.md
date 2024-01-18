@@ -11,6 +11,9 @@ walls:
   - name: Pipeline Right
     description: pipeline, but to the right
     slug: pipeline-right
+  - name: Tavern
+    description: Hard short climbs. Bouldery.
+    slug: Tavern
 ---
 
 KLO Creek is a great area!
