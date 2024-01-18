@@ -1,7 +1,6 @@
 ---
 templateKey: wall
 wallName: Bear Cave
-wallSlug: Bear Cave
 description: Some of the hardest, most bouldery routes of K.L.O./Kelowna. Home
   of the infamous "Kung Fu Panda".
 area: klo-creek
@@ -16,7 +15,7 @@ climbs:
       B(10) 20m
 
 
-      Probably the hardest and best 12b in the valley. Redpoint attempts on this one are sure to give you the screamy barfies. 
+      Probably the hardest and best 12b in the valley. Redpoint attempts on this one are sure to give you the screamy barfies.
   - name: 3. Bearly Legal
     grade: 5.12d
     description: B(12) 24m

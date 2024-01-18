@@ -1,7 +1,6 @@
 ---
 templateKey: wall
 wallName: Tavern
-wallSlug: Tarvern
 description: Sweet overhang
 area: klo-creek
 climbs:
