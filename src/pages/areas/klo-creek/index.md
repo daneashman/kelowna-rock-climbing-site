@@ -13,7 +13,7 @@ walls:
     slug: pipeline-right
   - name: Tavern
     description: Hard short climbs. Bouldery.
-    slug: Tavern
+    slug: tavern
   - name: Training Camp
     description: Great for beginners and chill days.
     slug: training-camp
